@@ -52,7 +52,7 @@ def decoder(msg):
 		for letter_encoded in word_encoded:
 			msg_decoded += verify_decode(CODE,letter_encoded)
 		msg_decoded += " "
-	print msg_decoded
+	print(msg_decoded)
 
 def main():
 	"""
