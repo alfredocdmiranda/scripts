@@ -25,7 +25,7 @@ def verify_encode(msg):
 	keys = CODE.keys()
 	for char in msg:
 		if char.upper() not in keys and not char == ' ':
-			raise BaseException("Error the charcter \"{0}\" cannot be translated to Morse Code".format(char))
+			raise BaseException("Error the character \"{0}\" cannot be translated to Morse Code".format(char))
 
 def verify_decode(dic,search_code):
 	for char,code in dic.iteritems():
@@ -37,9 +37,9 @@ def encoder(msg):
 	verify_encode(msg)
 	for char in msg:
 		if char == ' ':
-			print(' '*7),
+			print(' '*6),
 		else:
-			print(CODE[char]),
+			print(CODE[char] + " "*2),
 
 def decoder(msg):
 	msg = msg.split("       ")
