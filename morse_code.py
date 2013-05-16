@@ -46,7 +46,7 @@ def decoder(msg):
 	msg_encoded = []
 	msg_decoded = ""
 	for word in msg:
-		msg_encoded.append(word.split(" "))
+		msg_encoded.append(word.split("   "))
 
 	for word_encoded in msg_encoded:
 		for letter_encoded in word_encoded:
